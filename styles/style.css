@@ -235,13 +235,12 @@
     margin: 0 auto;
 }
 #footer-section{
-    width: 1440px;
     display: flex;
     justify-content: space-between;
     border-radius: 16px;
     background: rgba(13, 19, 33, 0.03);
     padding: 32px 150px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 #footer-section p{
     font-size: 20px;
