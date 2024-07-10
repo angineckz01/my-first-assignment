@@ -1,25 +1,20 @@
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900 */
 
 .azeret-mono-normal {
-    font-family: "Azeret Mono", monospace;
-    font-style: normal;
+  font-family: "Azeret Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
-
 * {
     margin: 0;
     padding: 0;
 }
-
 /* text-center style */
 .text-center {
     text-align: center;
 }
-
 .text-left {
     text-align: left;
 }
-
 .btn-text {
     color: rgb(13, 19, 33);
     font-size: 20px;
@@ -42,96 +37,77 @@
     text-align: center;
     margin-bottom: 24px;
 }
-
-.section-description {
+.section-subtitle {
     color: rgb(13, 19, 33);
     font-size: 16px;
     font-weight: 400;
+    opacity: 0.7;
+    margin-bottom: 32px;
 }
-
-main {
+.section-heading{
+    color: rgb(13, 19, 33);
+    opacity: 0.7;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.main-container {
     width: 1140px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     margin: 0 auto;
 }
-
 /* header section  */
 .header {
     background-image: url(../assets/Hero-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 26px 221px 44px;
-    margin: 0 auto;
     margin-bottom: 74px;
 }
 
-.header img {
-    width: 240px;
+.header .image {
     margin-bottom: 32px;
 }
-
 .header-title {
     font-size: 48px;
     font-weight: 800;
     margin-bottom: 24px;
 }
-
 .header-description {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 32px;
+    opacity: 0.7;
 }
-
 /* button section style */
 .btn-primary {
     color: white;
     font-size: 20px;
     font-weight: 600;
-    padding: 15px;
+    padding: 21px 24px;
     border-radius: 8px;
     background: rgb(13, 19, 33);
 }
-
+/* main-container */
+.main-container{
+    width: 1140px;
+    height: 775px;
+    margin: 0 150px 85px;
+    margin: 0 auto;
+}
 /* about sectiion begins from here  */
 .about {
-    width: 1140px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 80px 97px;
     border-radius: 16px;
     background: rgba(13, 19, 33, 0.02);
-    margin-bottom: 90px;
-}
-
-.about-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin-bottom: 88px;
 }
-
-.section-title {
-    margin-bottom: 24px;
-}
-
-.section-subtitle {
-    margin: 16px 0;
-}
-
-.section-description {
-    margin-bottom: 32px;
-    margin-bottom: 48px;
-}
-
-.section {
+.web-section {
     display: flex;
     gap: 100px;
     padding: 48px;
@@ -139,11 +115,15 @@ main {
     border-radius: 16px;
     background: linear-gradient(270.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
 }
-
+.language-title{
+    color: rgb(13, 19, 33);
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
 .second {
     background: linear-gradient(270.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
 }
-
 .first,
 .third {
     background: linear-gradient(90.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
@@ -157,7 +137,9 @@ main {
     justify-content: center;
     margin-bottom: 150px;
 }
-
+.inspiration-text{
+    margin: 0 144px 48px 144px;
+}
 .video {
     border-radius: 16px;
     padding: 32px;
@@ -168,17 +150,19 @@ main {
     align-items: center;
     box-sizing: border-box;
     border: 1px solid rgba(13, 19, 33, 0.2);
-
+}
+/* current target style section begins here*/
+.current-target {
+    margin-bottom: 50px;
 }
 
-/* current target style section begins here*/
 .languages {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 24px;
-}
 
+}
 .language {
     padding: 40px;
     border-radius: 16px;
@@ -195,9 +179,61 @@ main {
 .js {
     background: rgba(255, 223, 0, 0.05);
 }
-
 .language-title {
     font-size: 24px;
     font-weight: 800;
     text-align: left;
+}
+.anchor{
+    color: rgb(13, 19, 33);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+/* form style starts here */
+.form {
+    background-image: url(../assets/handshake.jpg);
+    border-radius: 16px;
+}
+.form-container{
+    padding: 64px 48px;
+}
+.form-title {
+    color: white;
+    font-size: 700;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+.form-description {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    opacity: 0.7;
+}
+.user-form {
+    box-sizing: border-box;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+#message {
+    padding: 19px 20px;
+    border-radius: 8px;
+    color: rgb(13, 19, 33, 0.4);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+#submit {
+    padding: 17px 20px;
+    color: rgb(13, 19, 33);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+.footer-section{
+
 }
